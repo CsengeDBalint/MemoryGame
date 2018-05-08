@@ -3,10 +3,10 @@ Google-Udacity  Front End Web Development Nanodegree - Project 3
 
 ## Table of Contents
 
-*`<addr>`Project
-*`<addr>`Dependencies
-*`<addr>`Contributing
-*`<addr>`Bugs
+* [Project] (#Project)
+* [Dependencies] (#Dependencies)
+* [Contributing] (#Contributing)
+* [Bugs] (#Bugs)
 
 
 ## Project
@@ -23,6 +23,6 @@ This project was made on the purpose of learning. If you want to contribute to t
 
 ## Bugs
 As this is a project in work there are several bugs:
-*timer doesn't work
-*modal doesn't show properly the number of stars and the time
+* timer doesn't work
+* modal doesn't show properly the number of stars and the time
 
