@@ -3,10 +3,10 @@ Google-Udacity  Front End Web Development Nanodegree - Project 3
 
 ## Table of Contents
   
-* [Project] (#<Project>)
-* [Dependencies] (#<Dependencies>)
-* [Contributing] (#<Contributing>)
-* [Bugs] (#<Bugs>)
+* Project
+* Dependencies
+* Contributing
+* Bugs
 
 
 ## Project
