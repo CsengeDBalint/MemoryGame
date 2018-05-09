@@ -164,26 +164,26 @@ function moveCount () {
 
 //  Update rating stars
 function updateRatingStars() {
-    ratingStarsNumber === 3;
+    ratingStarsNumber = 3;
 
     if (moveCounter === 1) {
         myTimer(); 
     }
     else if (moveCounter === 2 || moveCounter === 3) {
-        ratingStarsNumber === 3;   
-        resultStars.innerHTML === ratingStarsNumber;
+        ratingStarsNumber =3;   
+        resultStars.innerHTML = ratingStarsNumber;
     }
     else if (moveCounter >= 4 && moveCounter <= 7) {
 		// Remove first purple star
         stars[2].classList.remove("purple");
-        ratingStarsNumber == 2; 
-        resultStars.innerHTML === ratingStarsNumber;
+        ratingStarsNumber =2; 
+        resultStars.innerHTML = ratingStarsNumber;
         
 	} else if (moveCounter >= 8) {
 		//Remove second purple star
 		stars[1].classList.remove("purple");
-        ratingStarsNumber == 1;
-        resultStars.innerHTML === ratingStarsNumber; 
+        ratingStarsNumber = 1;
+        resultStars.innerHTML = ratingStarsNumber; 
 	}
 }
 
@@ -202,9 +202,9 @@ const resultTime = document.querySelector(".resultTime");
 function openModal() {
 	setTimeout(function() {
         modal.style.display = "block";
-        score.textContent = `It took ${moveCounter} moves, ${resultStars} stars and ${timer.innerHTML} time `;
+        //score.textContent = `It took ${moveCounter} moves, ${ratingStarsNumber} stars and ${timer.innerHTML} time `;
         resultMoves.innerHTML = moveCounter;
-        resultStars === ratingStarsNumber;
+        resultStars.innerHTML = ratingStarsNumber;
         resultTime.innerHTML = timer.innerHTML; 
          }, 1000);
          stopTimer();	 
@@ -219,7 +219,6 @@ span.onclick = function() {
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-
     }
 }
 
@@ -236,15 +235,15 @@ let time;
 function myTimer() {
     
     time = setInterval(function() {
-    
-        seconds+1;
+    timer.textContent = ` ${minutes} min.${seconds} sec.`;
+        seconds++;
       
       if (seconds === 60) {
-        minutes+1;
-        seconds === 0;
+        minutes++;
+        seconds = 0;
       }
     }, 1000);
-    timer.textContent = ` ${minutes} mins ${seconds} secs `;
+    
   }
 
 //Stop Timer
@@ -259,7 +258,9 @@ const playAgain = document.querySelector(".playAgain");
 playAgain.addEventListener('click', function () {
 	modal.style.display = "none";
     matchedCardsArray = [];
-    
+    minutes = 0;
+    seconds = 0;
+    timer.textContent = "0min.0sec.";
     moveCounter = 0;
     
 	startGame();
@@ -270,7 +271,7 @@ const restart = document.querySelector(".restart");
 
 restart.addEventListener('click', function (event) {
     matchedCardsArray = [];
-    
+    timer.textContent = "0min.0sec.";
     moveCounter = 0;
     
 	startGame();
@@ -290,3 +291,4 @@ startGame();
  *    + increment the move counter and display it on the page (put this functionality in another function that you call from this one)
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
+
