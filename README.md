@@ -22,7 +22,5 @@ I used the starter code of [Udacity](https://github.com/udacity/fend-project-mem
 This project was made on the purpose of learning. If you want to contribute to this project, your help is very welcome. 
 
 ## Bugs
-As this is a project in work there are several bugs:
-* timer doesn't work
-* modal doesn't show properly the number of stars and the time
+
 
