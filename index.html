@@ -1,14 +1,16 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Matching Game</title>
     <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rubik" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
-
     <div class="container">
         <header>
             <h1>Matching Game</h1>
@@ -21,7 +23,7 @@
         		<li><i class="fa fa-star purple"></i></li>
         	</ul>
 
-        	<span id="moves" class="moves"></span> Moves
+            <span id="moves" class="moves">0</span><span class="moves"> Moves</span>
 
             <div class="timer">
                 <div class="min">0 min.</div>
@@ -85,18 +87,18 @@
             </li>
         </ul>
          <!-- Modal -->
-         <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <span><i class="fa fa-check-circle"></i> </span>
+            <span><i class="fa fa-trophy"></i> </span>
             <p class="textCongrat">Congratulations!</p>
             <p> You won!</p>
             <p class="score"></p>
             <p>Moves: <span class="resultMoves"></span></p>
             <p>Stars: <span class="resultStars"></span></p>
             <p>Time: <span class="resultTime"></span></p>
-            
+            <p>Could you do it even better?</p>
             <button id="playAgain" class="playAgain">Play again!</button>
         </div>
     </div>
